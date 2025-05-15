@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exodus Pediatrics</title>
- <link href="/src/styles.css" type="stylesheet">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-    body {
-      font-family: 'Roboto', sans-serif;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exdous peadiatrics</title>
+    <link href="/src/styles.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Smooth mobile menu animation */
+        #mobileMenu {
+            transition: all 0.3s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+        #mobileMenu.open {
+            max-height: 500px;
+        }
+        
+        /* Fix for contact section positioning */
+        #contact-section {
+            position: relative;
+            z-index: 5;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
   <div class="container mx-auto px-4 py-8"></div>
