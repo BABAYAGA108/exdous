@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exodus Pediatrics</title>
- <link href="/src/styles.css" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+ <link href="/src/styles.css" type="stylesheet">
     <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
     body {
       font-family: 'Roboto', sans-serif;
@@ -13,14 +12,14 @@
   </style>
 </head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-  <div class="container mx-auto px-4 py-8">
+  <div class="container mx-auto px-4 py-8"></div>
     
     <!-- Navbar -->
     <nav role="navigation" class="relative z-10 bg-white shadow-md">
       <div class="container mx-auto px-4 py-2 flex justify-between items-center">
         <!-- Logo -->
         <div class="flex items-center">
-          <img src="photos/logo-626(1).png" alt="Logo" class="h-10 w-10 mr-2">
+          <img src="photos/logo-626(1).png" alt="Abstract blue and green geometric logo resembling interconnected loops forming a symmetrical floral or medical cross shape, conveying a sense of care and professionalism, on a white background" class="h-10 w-10 mr-2">
           <span class="text-xl font-semibold">Exodus Pediatrics</span>
         </div>
         
@@ -398,6 +397,13 @@
         }
       });
     });
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.add('hidden');
+  });
+});
+
   </script>
 </body>
 </html>

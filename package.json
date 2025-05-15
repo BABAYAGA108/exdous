@@ -1,0 +1,16 @@
+{
+  "name": "your-app-name",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.6",
+    "tailwindcss": "^4.1.6"
+  },
+  "devDependencies": {
+    "vite": "^4.1.6"
+  }
+}
